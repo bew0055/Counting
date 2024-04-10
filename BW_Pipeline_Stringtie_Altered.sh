@@ -248,7 +248,9 @@ do
   
 
 	######################  Step 3b  Counting  		################
-
+#To differentiate from the original parameters, this script has the addition of the -c flag.
+#The -c flag sets a minimum coverage read depth - transcripts with lower coverage will not be included in the output.
+#Much of the literature on use of this flag has it set at 1.5 as to exclude any transcripts that have a depth of 1.
 	mkdir "${COUNTSD}"/"$i"
 	stringtie -p 6 -e -c 1.5 -B -G  "${REFD}"/"${REF}".gtf -o "${COUNTSD}"/"$i"/"$i".gtf -l "$i"   "${MAPD}"/"$i"_sorted.bam
 
