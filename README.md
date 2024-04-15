@@ -1,3 +1,4 @@
+#!/bin/bash
 # Counting
 FunctionalGenomics_Project
 
