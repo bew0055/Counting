@@ -1,9 +1,10 @@
+
+#!/bin/bash
 # Counting
 FunctionalGenomics_Project
 
 #htseq_default
 
-#!/bin/bash
 # Load necessary modules
 source /apps/profiles/modules_asax.sh.dyn
 module load htseq
